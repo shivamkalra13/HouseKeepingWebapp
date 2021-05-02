@@ -1,0 +1,69 @@
+h1  /* Heading 'House Keeping' */
+{
+  font-family: 'Cabin', sans-serif;
+}
+body /* For Background Color */
+{
+  background-color: white;
+}
+h1
+{
+  margin: auto;
+}
+#topbar
+{
+  background: #434d59;
+  color: white;
+  margin-bottom: 1%;
+  padding: 0.5%;
+  position:sticky;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+}
+div.urlsdiv
+{
+  margin-top: 2%;
+  padding: 3%;
+  background-color: #f1f2f3;
+}
+.desc /* Description */
+{
+  font-family: 'Bree Serif', serif;
+}
+.btn-lg /* All Buttons */
+{
+  border-radius: 10px;
+  color:#f8f8f8;
+  font-family: 'Cabin', sans-serif;
+}
+.container /* Buttons Container */
+{
+  min-width: 96%;
+}
+.lgspace /* Space between button rows for large screen */
+{
+  min-width: 100%;
+}
+@media (max-width:767px) /* For small screens */
+{
+  .btn-lg  /* Space between button rows for small screen */
+  {
+    margin-top:.5%;
+  }
+  .lgspace /* Hiding div for space between button rows on large screen */
+  {
+    display: none;
+  }
+}
+@media (min-width:768px) /* For large screens */
+{
+  .lgspace  /* Showing div for space between button rows on large screen */
+  {
+    display: inline-block;
+  }
+  .btn  /*All Buttons*/
+  {
+    margin: auto;
+  }
+}

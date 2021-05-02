@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Jomhuria&family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{%static 'css/index.css'%}">
+    <title>HouseKeeping</title>
+  </head>
+  <body onload="abc()">
+      <div id="topbar">
+        <center>
+          <h1>House Keeping ERP WebApp</h1>
+          <h5>(Showing use of Restful API developed using Python Django)</h5> <!-- Heading -->
+        </center>
+      </div>
+      <div class="desc" style="padding:2%;">  <!-- Description -->
+        <h5>This is a Django based webapp. It is developed keeping in mind the housekeeping management service use case i.e. to manage details of the assets, workers and tasks of such an organisation.</h5>
+      </div>
+      <div class="container"> <!-- Buttons container -->
+        <div class="row">
+          <div class="lgspace"><br></div>  <!-- Empty Div visible on large screen for space between button rows -->
+          <button type="button" class="btn btn-dark btn-lg col-lg-4 col-xl-4 col-12 col-md-4" onclick="window.location.href='../../admin/first_app/asset/add/'">Add Asset</button>
+          <button type="button" class="btn btn-dark btn-lg col-lg-4 col-xl-4 col-12 col-md-4" onclick="window.location.href='../../admin/first_app/task/add/'">Add Task</button>
+          <div class="lgspace"><br></div>  <!-- Empty Div visible on large screen for space between button rows -->
+          <button type="button" class="btn btn-dark btn-lg col-lg-4 col-xl-4 col-12 col-md-4" onclick="window.location.href='../../admin/first_app/worker/add/'">Add Worker</button>
+          <button type="button" class="btn btn-dark btn-lg col-lg-4 col-xl-4 col-12 col-md-4" onclick="window.location.href='../assets/all'">Show All Assets</button>
+          <div class="lgspace"><br></div>  <!-- Empty Div visible on large screen for space between button rows -->
+          <button type="button" class="btn btn-dark btn-lg col-lg-4 col-xl-4 col-12 col-md-4" onclick="window.location.href='../allocate-task'">Allocate Tasks</button>
+          <button type="button" class="btn btn-dark btn-lg col-lg-4 col-xl-4 col-12 col-md-4" onclick="window.location.href='../../admin/first_app/worker/'">Get Tasks For Worker</button>
+          <div class="lgspace"><br></div>
+          <button type="button" class="btn btn-dark btn-lg col-lg-4 col-xl-4 col-12 col-md-4" onclick="window.location.href='../add-asset'">Add Asset(API format)</button>
+          <button type="button" class="btn btn-dark btn-lg col-lg-4 col-xl-4 col-12 col-md-4" onclick="window.location.href='../add-task'">Add Task(API format)</button>
+          <div class="lgspace"><br></div>
+          <button type="button" class="btn btn-dark btn-lg col-lg-4 col-xl-4 col-12 col-md-4" onclick="window.location.href='../add-worker'">Add Worker(API Format)</button>
+        </div>
+      </div>
+      <div class="urlsdiv">
+        <h1><center> URLs of importance: -</center></h1>
+        <h4><ul>
+        <li>localhost/first_app/index - It is the home page of webapp</li><br>
+
+        <li>localhost/first_app/add-asset/ - API 1</li><br>
+
+        <li>localhost/first_app/add-task/ - API 2</li><br>
+
+        <li>localhost/first_app/add-worker/ - API 3</li><br>
+
+        <li>localhost/first_app/assets/all/ - API 4</li><br>
+
+        <li>localhost/first_app/allocate-task/ - API 5</li><br>
+
+        <li>localhost/first_app/get-tasks-for-worker/{workerid} - API 6</li><br>
+        => example-><a href="http://127.0.0.1:8000/first_app/get-tasks-for-worker/w1">http://127.0.0.1:8000/first_app/get-tasks-for-worker/w1</a>
+        </ul>
+      </h4>
+      </div>
+  </body>
+</html>
