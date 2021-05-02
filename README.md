@@ -30,3 +30,11 @@ It is a Python Django based webapp
 
 * Rest urls can be reached from home page.
 
+### Some screenshots of the app: -
+![Capture1](https://github.com/shivamkalra13/HouseKeepingWebapp/blob/master/Capture1.JPG)
+
+![Capture2](https://github.com/shivamkalra13/HouseKeepingWebapp/blob/master/Capture2.JPG)
+
+![Capture3](https://github.com/shivamkalra13/HouseKeepingWebapp/blob/master/Capture3.JPG)
+
+![Capture4](https://github.com/shivamkalra13/HouseKeepingWebapp/blob/master/Capture4.JPG)
